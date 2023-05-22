@@ -3,13 +3,13 @@ import numpy
 import time
 from solution import solution
 
-
+Max_iter =1000
 # Differential Evolution (DE)
 # mutation factor = [0.5, 2]
 # crossover_ratio = [0,1]
 def DE(objf, lb, ub, dim, PopSize, iters):
 
-    mutation_factor = 0.5
+    mutation_factor = 0.5 +0.5 *(1-(iters/Max_iter)
     crossover_ratio = 0.7
     stopping_func = None
 

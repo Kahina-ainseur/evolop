@@ -9,7 +9,7 @@ Max_iter =1000
 # crossover_ratio = [0,1]
 def DE(objf, lb, ub, dim, PopSize, iters):
 
-    mutation_factor = 0.5 +0.5 *(1-(iters/Max_iter)
+    mutation_factor = 0.5 +0.5 *(1-(iters/Max_iter))
     crossover_ratio = 0.7
     stopping_func = None
 

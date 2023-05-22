@@ -68,7 +68,7 @@ def PSO(objf, lb, ub, dim, PopSize, iters):
                 gBest = pos[i, :].copy()
 
         # Update the W of PSO
-        w = wMax - l * ((wMax - wMin) / iters)
+        w = wMax - l * ((wMax - wMin) / iters)**2
 
         for i in range(0, PopSize):
             for j in range(0, dim):
